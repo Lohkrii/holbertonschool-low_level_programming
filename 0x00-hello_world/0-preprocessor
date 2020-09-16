@@ -1,2 +1,2 @@
 #!/bin/bash
-gcc -e CFILE.c > c
+gcc -eo CFILE.c > c
