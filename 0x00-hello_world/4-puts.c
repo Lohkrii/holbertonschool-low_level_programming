@@ -5,7 +5,6 @@
  *
  *Return: Returns inputted string
 */
-
 int main(void)
 {
 	puts("\"Pogramming is like building a multilingual puzzle");
