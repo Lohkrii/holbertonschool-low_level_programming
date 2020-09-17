@@ -1,9 +1,9 @@
 #include <stdio.h>
 
 /**
- * main - Prints the values of all the types on the computer.
+ * main - entry point
  *
- * Return: Must be 0 to work
+ * Return: always 0 (success)
 */
 int main(void)
 {
