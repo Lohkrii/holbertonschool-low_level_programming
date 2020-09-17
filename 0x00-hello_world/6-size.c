@@ -7,6 +7,6 @@
 */
 int main(void)
 {
-printf(NNN, xHH, uHHH, UHHHHHHHH);
+printf(NNN, xHH, uHHH, UHHHHHHHH"\n");
 return (0);
 }
