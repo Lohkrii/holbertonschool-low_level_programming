@@ -5,9 +5,8 @@
  *
  * Return: Must be 0 to work
 */
-
 int main(void)
 {
-	printf(NNN, xHH, uHHH, UHHHHHHHH);
-	return (0);
+printf(NNN, xHH, uHHH, UHHHHHHHH);
+return (0);
 }
