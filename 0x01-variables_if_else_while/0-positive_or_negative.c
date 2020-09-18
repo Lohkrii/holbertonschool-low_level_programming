@@ -1,5 +1,6 @@
 #include <stdlib.h>
 #include <time.h>
+
 /**
  * main - Loops int n and prints answer.
  *
