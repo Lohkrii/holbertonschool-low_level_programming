@@ -5,7 +5,6 @@
  *
  * Return: Must be 0 to be able to execute.
 */
-
 int main(void)
 {
 	int x = '0';
