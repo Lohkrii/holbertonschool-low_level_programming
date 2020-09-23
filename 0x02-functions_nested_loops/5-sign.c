@@ -2,7 +2,9 @@
 
 /**
  * print_sign - Prints the sign of the number.
- * 
+ *
+ * @n - = input variable.
+ *
  * Return: If 1 = positive, if 0 = zero, if -1 = negative.
 */
 
@@ -23,5 +25,6 @@ int print_sign(int n)
 		_putchar('+');
 		return (1);
 	}
+	_putchar('\n');
 	return (n);
 }
