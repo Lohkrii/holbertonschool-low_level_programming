@@ -3,6 +3,8 @@
 /**
  * _isalpha - Check if c is an alphabetic character.
  *
+ * @c: Outside input variable.
+ *
  * Return: If 1, c = Alphabetic character.
 */
 
