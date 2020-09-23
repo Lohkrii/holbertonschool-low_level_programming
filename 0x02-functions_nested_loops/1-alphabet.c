@@ -1,13 +1,19 @@
 #include "holberton.h"
 
 /**
- * main - Print the alphabet.
+ * main - Prints the alphabet in lower case.
  *
- * Return: Must be 0.
+ * Return: Must be 0 for execution.
 */
 
-int main(void)
+void print_alphabet(void)
 {
-	print_alphabet();
+	char x;
+
+	for (x = 'a'; x <= 'z'; x++)
+	{
+		_putchar(x);
+	}
+	_putchar('\n');
 	return (0);
-}	
+}
