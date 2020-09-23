@@ -1,4 +1,4 @@
-#inlcude "holberton.h"
+#include "holberton.h"
 
 /**
  * main - Print the alphabet.
