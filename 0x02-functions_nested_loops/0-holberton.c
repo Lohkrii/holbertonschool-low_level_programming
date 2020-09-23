@@ -11,7 +11,7 @@ int main(void)
 	char n[9] = "Holberton";
 	int x;
 
-	for (x = 0; x < 8; x++)
+	for (x = 0; x < 9; x++)
 	{
 		_putchar(n[x]);
 	}
