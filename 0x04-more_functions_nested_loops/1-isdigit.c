@@ -1,11 +1,11 @@
 #include "holberton.h"
 
 /**
+ * _isdigit - Checks for digits 0-9.
  *
+ * @c: Is the variable in question.
  *
- *
- *
- *
+ * Return: Return 1 if c is of range 0-9.
 */
 
 int _isdigit(int c)
