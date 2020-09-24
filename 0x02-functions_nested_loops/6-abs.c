@@ -3,19 +3,18 @@
 /**
  * _abs - Prints absolute value of integer.
  *
- * @int: is the input variable.
+ * @N: is the input variable.
  *
  * Return: must be 0
 */
 
-int _abs(int)
+int _abs(int N)
 {
-	int N;
 
 	if (N < 0)
 	{
 		N = (-1) * N;
 	}
 	_putchar('\n');
-	return (0);
+	return (N);
 }
