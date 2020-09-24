@@ -3,6 +3,8 @@
 /**
  * _isupper - Checks for uppercase letter.
  *
+ * @c: is the variable in question.
+ *
  * Return: return 1 for upper.
 */
 
