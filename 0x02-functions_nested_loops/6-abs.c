@@ -7,7 +7,6 @@
  *
  * Return: must be 0
 */
-
 int _abs(int N)
 {
 
