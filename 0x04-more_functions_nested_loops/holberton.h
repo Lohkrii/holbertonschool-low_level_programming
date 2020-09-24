@@ -7,3 +7,5 @@ int print_sign(int n);
 int _abs(int N);
 int print_last_digit(int n);
 int _isupper(int c);
+int _isdigit(int c);
+
