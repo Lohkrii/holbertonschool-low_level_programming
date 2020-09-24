@@ -7,7 +7,7 @@
  *
  * Return: must be 0
 */
-int _abs(int N)
+int _abs(int)
 {
 
 	if (N < 0)
