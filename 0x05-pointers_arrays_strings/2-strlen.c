@@ -17,4 +17,5 @@ int _strlen(char *s)
 		ip++;
 	}
 	return (*ip);
+	_putchar('\n');
 }
