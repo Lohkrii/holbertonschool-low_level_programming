@@ -4,6 +4,8 @@
  * _strlen - Returns the length of the string.
  *
  * @s: is the input string.
+ *
+ * Return: Returns length of string.
 */
 
 int _strlen(char *s)
