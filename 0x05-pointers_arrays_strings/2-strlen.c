@@ -1,21 +1,17 @@
 #include "holberton.h"
 
 /**
- * _strlen - Returns the length of the string.
+ * _strlen - Returns the length of a string.
  *
- * @s: is the input string.
+ * @s: Is the Array in question.
  *
- * Return: Returns length of string.
+ * Return: Returns the length variable of the array.
 */
 
 int _strlen(char *s)
 {
-	char *ip = s;
-
-	while (*ip != '\n')
-	{
-		ip++;
-	}
-	return (*ip);
-	_putchar('\n');
+	int ip;
+	
+	for (ip = 0; *(s + ip) != '\0'; ip++);
+	return (ip);
 }
