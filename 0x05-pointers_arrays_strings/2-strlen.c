@@ -13,5 +13,7 @@ int _strlen(char *s)
 	int ip;
 
 	for (ip = 0; *(s + ip) != '\0'; ip++)
+	{
+	}
 	return (ip);
 }
