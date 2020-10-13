@@ -19,7 +19,7 @@ int main(int argc, char **argv)
 		printf("Error\n");
 		return (1);
 	}
-	for(idx = 1; idx < argc; idx++)
+	for (idx = 1; idx < argc; idx++)
 	{
 		prdt *= atoi(argv[idx]);
 	}
