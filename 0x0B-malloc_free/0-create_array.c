@@ -15,7 +15,7 @@ char *create_array(unsigned int size, char c)
 
 	if (size > 0 && c == 'H')
 	{
-		p = (char *)malloc(size * 1;
+		p = (char *)malloc(size * 1);
 		for (idx = 0; idx <= size; idx++)
 		{
 			p[idx] = c;
