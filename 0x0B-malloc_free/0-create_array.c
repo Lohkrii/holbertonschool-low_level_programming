@@ -13,7 +13,11 @@ char *create_array(unsigned int size, char c)
 	char *p;
 	unsigned int idx;
 
-	if (size != 0 && c == 'H')
+	if (size == 0)
+	{
+		return (NULL);
+	}
+	if (c == 'H')
 	{
 		p = malloc(size * sizeof(char));
 		for (idx = 0; idx <= size; idx++)
