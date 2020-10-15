@@ -13,17 +13,14 @@ char *create_array(unsigned int size, char c)
 	char *p;
 	unsigned int idx;
 
-	if (size > 0 && c == 'H')
-	{
-		p = (char *)malloc(size * 1);
-		for (idx = 0; idx <= size; idx++)
-		{
-			p[idx] = c;
-		}
-		return (p);
-	}
-	else
+	if (size == 0)
 	{
 		return (NULL);
 	}
+	p = (char *)malloc(size * 1);
+	for (idx = 0; idx <= size; idx++)
+	{
+		p[idx] = c;
+	}
+	return (p);
 }
