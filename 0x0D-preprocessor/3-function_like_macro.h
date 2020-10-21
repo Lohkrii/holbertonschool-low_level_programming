@@ -1,13 +1,11 @@
 #ifndef ABS
 #define ABS(x)
-
-int main()
+int sum(x)
 {
-#if x < 0
+	if (x < 0)
 	{
-		(x = (x * -1));
+		x = (x * -1);
 	}
-#endif /** If **/
 	return (0);
 }
 #endif /** ABS **/
