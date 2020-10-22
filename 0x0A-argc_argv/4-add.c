@@ -16,16 +16,18 @@ int main(int argc, char **argv)
 	int idx;
 	int sum;
 
-	for (scn = 1; scn < argv; scn++)
+	for (scn = 1; scn < *argv; scn++)
 	{
 		if (*argv[scn] < '0' || *argv[scn] > '9')
 		{
 			printf("%d\n", 0);
-			return(1);
+			return (0);
 		}
-		else
+		else if ((*argv[scn] <= 'a' && *argv[scn] >= 'z') || (*argv[scn] <= 'A' && *argv[scn] >= 'Z'))
 		{
-
+			printf("Error");
+			return (1);
+		}
 	}
 	for (idx = 1; idx < argc; idx++)
 	{

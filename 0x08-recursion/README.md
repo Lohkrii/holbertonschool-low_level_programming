@@ -1,1 +1,1 @@
-This contains my tasks for project 0x08.:
+This cotains my tasks for project 0x08.:
