@@ -18,13 +18,10 @@ void print_numbers(const char *separator, const unsigned int n, ...)
 	{
 		for (idx = 0; idx < n; idx++)
 		{
+			printf("%d", va_arg(nbrz, int));
 			if (idx != n-1)
 			{
-				printf("%d%s", va_arg(nbrz, int), separator);
-			}
-			else
-			{
-				printf("%d", va_arg(nbrz, int));
+				printf("%s", separator);
 			}
 		}
 	}
