@@ -7,12 +7,12 @@
  * @n: is the number of arguments passed.
 */
 
-int sum_them_all(const unsigned n, ...)
+int sum_them_all(const unsigned int n, ...)
 {
 	va_list arghold;
 	unsigned int idx;
 	int sum = 0;
-	
+
 	if (n == 0)
 	{
 		return (0);
