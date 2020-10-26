@@ -25,7 +25,6 @@ void print_numbers(const char *separator, const unsigned int n, ...)
 			printf("%d", va_arg(nbrz, int));
 			if (idx != n-1)
 			{
-				if (separator != NULL)
 				{
 					printf("%s", separator);
 				}
