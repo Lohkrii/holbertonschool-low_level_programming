@@ -16,21 +16,22 @@ void print_numbers(const char *separator, const unsigned int n, ...)
 	va_start(nbrz, n);
 	if (n > 0)
 	{
-		if (separator != NULL)
+		if (separator == NULL)
 		{
-			for (idx = 0; idx < n; idx++)
+			separator = "";
+		}
+		for (idx = 0; idx < n; idx++)
+		{
+			printf("%d", va_arg(nbrz, int));
+			if (idx != n-1)
 			{
-				printf("%d", va_arg(nbrz, int));
-				if (idx != n-1)
+				if (separator != NULL)
 				{
-					if (separator != NULL)
-					{
-						printf("%s", separator);
-					}
+					printf("%s", separator);
 				}
 			}
-			printf("\n");
 		}
+		printf("\n");
 	}
 	va_end(nbrz);
 }
