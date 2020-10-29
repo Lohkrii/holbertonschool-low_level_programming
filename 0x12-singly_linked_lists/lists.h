@@ -22,4 +22,7 @@ typedef struct list_s
 /** prints elements in list **/
 size_t print_list(const list_t *h);
 
+/** Returns length of linked list **/
+size_t list_len(const list_t *h);
+
 #endif /** lists **/
