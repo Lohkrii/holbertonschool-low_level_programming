@@ -31,4 +31,7 @@ list_t *add_node(list_t **head, const char *str);
 /** Adds a new node at the tail of the list **/
 list_t *add_node_end(list_t **head, const char *str);
 
+/** Frees a list in memory **/
+void free_list(list_t *head);
+
 #endif /** lists **/
