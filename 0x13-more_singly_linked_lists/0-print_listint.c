@@ -8,32 +8,13 @@
 
 size_t print_listint(const listint_t *h)
 {
-	const listint_t *temp;
 	unsigned int count;
 
-	temp = malloc(sizeof(listint_t));
-
-	if (temp == NULL)
+	for (count = 0; h != NULL; count++)
 	{
-		printf("Error\n");
-		return (1);
-	}
-	temp = h;
-	if (h != NULL)
-	{
-		for (count = 0; temp->n != '\0'; count++)
-		{
-			printf("%i\n", temp->n);
-			if (temp->next != NULL)
-			{
-				temp = temp->next;
-			}
-			else if (temp->next == NULL)
-			{
-				count++;
-				break;
-			}
-		}
+		printf("%d\n", h->n);
+		h = h->next;
 	}
 	return (count);
 }
+
