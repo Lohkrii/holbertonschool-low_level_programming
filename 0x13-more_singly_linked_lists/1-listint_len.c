@@ -22,6 +22,10 @@ size_t listint_len(const listint_t *h)
 	{
 		return (0);
 	}
+	if (h->n == '\0')
+	{
+		return (0);
+	}
 	temp = h->next;
 	for (ecount = 1; temp->n != '\0'; ecount++)
 	{
