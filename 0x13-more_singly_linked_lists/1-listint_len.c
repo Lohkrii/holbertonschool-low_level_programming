@@ -1,40 +1,19 @@
 #include "lists.h"
 
 /**
- * listint_len - Return the number of elements in a linked list.
- * @h: Is the head pointer.
- * Return: Returns the number of elements.
+ * listint_len - calculates the amount of elements in a linked list
+ * @h: head of the list
+ * Return: amount of nodes
  */
-
 size_t listint_len(const listint_t *h)
 {
-	const listint_t *temp;
-	unsigned int ecount;
+	size_t len = 0;
 
-	temp = malloc(sizeof(listint_t));
+	while (h != NULL)
+	{
+		len++;
+		h = h->next;
+	}
 
-	if (temp == NULL)
-	{
-		printf("Error\n");
-		return (0);
-	}
-	if (h == NULL)
-	{
-		return (0);
-	}
-	if (h->n == '\0')
-	{
-		return (0);
-	}
-	temp = h->next;
-	for (ecount = 1; temp->n != '\0'; ecount++)
-	{
-		if (temp->next == NULL)
-		{
-			ecount++;
-			break;
-		}
-		temp = temp->next;
-	}
-	return (ecount);
+	return (len);
 }
