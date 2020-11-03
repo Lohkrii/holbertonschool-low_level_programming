@@ -68,4 +68,6 @@ listint_t *add_nodeint(listint_t **head, const int n);
 /** Adds a node at the tail of a linked list **/
 listint_t *add_nodeint_end(listint_t **head, const int n);
 
+/** Frees a linked list **/
+void free_listint(listint_t *head);
 #endif /** lists **/
