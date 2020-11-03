@@ -70,4 +70,8 @@ listint_t *add_nodeint_end(listint_t **head, const int n);
 
 /** Frees a linked list **/
 void free_listint(listint_t *head);
+
+/** Frees a linked list **/
+void free_listint2(listint_t **head);
+
 #endif /** lists **/
