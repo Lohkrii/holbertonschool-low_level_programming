@@ -4,7 +4,8 @@
  * add_nodeint_end - Adds a node at the tail of a list.
  * @head: Is the pointer to the head of the list.
  * @n: Is the integer to be stored in the node.
- */
+ * Return: Returns the adress of the node or NULL if failed.
+*/
 
 listint_t *add_nodeint_end(listint_t **head, const int n)
 {
