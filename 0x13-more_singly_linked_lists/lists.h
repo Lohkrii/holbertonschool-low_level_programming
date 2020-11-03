@@ -4,6 +4,9 @@
 #include <stdlib.h>
 #include <string.h>
 
+/** Prints a char **/
+int _putchar(char c);
+
 /*** Project 0x12 ***/
 
 /**
