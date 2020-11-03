@@ -59,4 +59,6 @@ size_t print_listint(const listint_t *h);
 /** Returns the number of elements **/
 size_t listint_len(const listint_t *h);
 
+/** Adds a node to the start of a linked list **/
+listint_t *add_nodeint(listint_t **head, const int n);
 #endif /** lists **/
