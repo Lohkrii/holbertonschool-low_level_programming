@@ -9,9 +9,9 @@ void free_listint2(listint_t **head)
 {
 	listint_t *temp, *crnt_node;
 
-	temp = *head;
 	if (head != NULL)
 	{
+		*temp = head;
 		while (temp != NULL)
 		{
 			crnt_node = temp->next;
