@@ -77,4 +77,6 @@ void free_listint2(listint_t **head);
 /** Frees the head of a linked list **/
 int pop_listint(listint_t **head);
 
+/** Returns the nth node **/
+listint_t *get_nodeint_at_index(listint_t *head, unsigned int index);
 #endif /** lists **/
