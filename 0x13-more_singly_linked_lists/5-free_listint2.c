@@ -11,7 +11,7 @@ void free_listint2(listint_t **head)
 
 	if (head != NULL)
 	{
-		*temp = head;
+		temp = *head;
 		while (temp != NULL)
 		{
 			crnt_node = temp->next;
