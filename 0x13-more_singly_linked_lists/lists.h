@@ -74,4 +74,7 @@ void free_listint(listint_t *head);
 /** Frees a linked list **/
 void free_listint2(listint_t **head);
 
+/** Frees the head of a linked list **/
+int pop_listint(listint_t **head);
+
 #endif /** lists **/
