@@ -79,4 +79,8 @@ int pop_listint(listint_t **head);
 
 /** Returns the nth node **/
 listint_t *get_nodeint_at_index(listint_t *head, unsigned int index);
+
+/** Returns the sum of all n elements in a linked list **/
+int sum_listint(listint_t *head);
+
 #endif /** lists **/
