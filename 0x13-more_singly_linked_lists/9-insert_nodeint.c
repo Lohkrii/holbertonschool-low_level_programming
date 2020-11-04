@@ -3,7 +3,7 @@
 /**
  * insert_nodeint_at_index - Instserts a node at a specified index.
  * @head: Is the top of the list.
- * @index: Is the desired index for the new node.
+ * @idx: Is the desired index for the new node.
  * @n: Is the data element of the new node.
  * Return: Returns the address of the new node or NULL if failed.
  */
