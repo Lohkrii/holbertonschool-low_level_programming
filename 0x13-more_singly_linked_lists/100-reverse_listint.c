@@ -3,6 +3,7 @@
 /**
  * reverse_listint - Reverses a linked lists.
  * @head: Is the start of the list.
+ * Return: Returns the head of the list or NULL if it failed.
  */
 
 listint_t *reverse_listint(listint_t **head)
