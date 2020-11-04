@@ -39,7 +39,7 @@ listint_t *insert_nodeint_at_index(listint_t **head, unsigned int idx, int n)
 		}
 		temp = temp->next;
 	}
-	if (idx_run == idx -1)
+	if (idx_run == idx - 1)
 	{
 		new = temp->next;
 		new->n = n;
