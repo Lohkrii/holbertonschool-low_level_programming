@@ -85,4 +85,8 @@ int sum_listint(listint_t *head);
 
 /** Inserts a node at a specified place **/
 listint_t *insert_nodeint_at_index(listint_t **head, unsigned int idx, int n);
+
+/** Deletes a node at the specified index **/
+int delete_nodeint_at_index(listint_t **head, unsigned int index);
+
 #endif /** lists **/
