@@ -8,7 +8,7 @@
  * Return: Returns the address of the new node or NULL if failed.
  */
 
-listint_t *insert_nodeint_at_index(listint_t **head, unsigned int index, int n)
+listint_t *insert_nodeint_at_index(listint_t **head, unsigned int idx, int n)
 {
 	listint_t *new, *temp;
 	unsigned int idx_run;
@@ -24,7 +24,7 @@ listint_t *insert_nodeint_at_index(listint_t **head, unsigned int index, int n)
 	{
 		return (NULL);
 	}
-	for (idx_run = 0; idx_run < index; idx_run++)
+	for (idx_run = 0; idx_run < idx; idx_run++)
 	{
 		if (temp == NULL)
 		{
