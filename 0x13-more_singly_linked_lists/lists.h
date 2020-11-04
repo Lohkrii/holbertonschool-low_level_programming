@@ -83,4 +83,6 @@ listint_t *get_nodeint_at_index(listint_t *head, unsigned int index);
 /** Returns the sum of all n elements in a linked list **/
 int sum_listint(listint_t *head);
 
+/** Inserts a node at a specified place **/
+listint_t *insert_nodeint_at_index(listint_t **head, unsigned int idx, int n);
 #endif /** lists **/
