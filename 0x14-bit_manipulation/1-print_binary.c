@@ -7,4 +7,10 @@
 
 void print_binary(unsigned long int n)
 {
+	unsigned long int mask = mask =  ;
+	int flag = 0;
+
+	while (mask > 0)
+	{
+		if ((n & mask
 }
