@@ -24,4 +24,7 @@ unsigned int flip_bits(unsigned long int n, unsigned long int m);
 
 /** Checks the endianness **/
 int get_endianness(void);
+
+/** Prints a Char **/
+int _putchar(char c);
 #endif /** holberton.h **/
