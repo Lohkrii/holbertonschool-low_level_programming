@@ -10,7 +10,7 @@
 int main(int args, char **str)
 {
 	int from_fd, to_fd, close_first, close_second, read_f;
-	char membuf[1024];
+	char buf[1024];
 
 	if (args != 3)
 		dprintf(STDERR_FILENO, "Usage: cp file_from file_to\n"), exit(97);
@@ -25,9 +25,9 @@ int main(int args, char **str)
 	if (to_fd == -1)
 		dprintf(STDERR_FILENO, "Error: Can't write to %s\n", str[2]), exit(99);
 
-	while ((read_f = read(from_fd, membuf, 1024)) > 0)
+	while ((read_f = read(from_fd, buf, 1024)) > 0)
 	{
-		if (write(to_fd, membuf, read_f) == -1)
+		if (write(to_fd, buf, read_f) == -1)
 			dprintf(STDERR_FILENO, "Error: Can't write to %s\n", str[2]), exit(99);
 	}
 
