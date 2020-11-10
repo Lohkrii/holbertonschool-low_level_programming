@@ -18,7 +18,7 @@ int main(int args, char **str)
 	from_fd = open(str[1], O_RDONLY);
 
 	if (from_fd == -1)
-		dprintf(STDERR_FILENO, "Error: Can't read from %s\n", str[1]), exit(98);
+		dprintf(STDERR_FILENO, "Error: Can't read from file %s\n", str[1]), exit(98);
 
 	to_fd = open(str[2], O_TRUNC | O_CREAT | O_WRONLY, 0664);
 
