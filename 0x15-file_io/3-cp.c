@@ -29,7 +29,7 @@ int main(int args, char **str)
 			dprintf(STDERR_FILENO, "Error: Can't write to %s\n", str[2]), exit(99);
 	}
 	if (read_f == -1)
-		dprintf(STDERR_FILENO, "Error: Can't read from file %s\n", str[2]), exit(98);
+		dprintf(STDERR_FILENO, "Error: Can't read from file %s\n", str[1]), exit(98);
 
 	close_first = close(from);
 	if (close_first == -1)
