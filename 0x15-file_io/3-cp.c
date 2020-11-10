@@ -28,7 +28,9 @@ int main(int args, char **str)
 	while ((read_f = read(from_fd, buf, 1024)) > 0)
 	{
 		if (write(to_fd, buf, read_f) == -1)
+		{
 			dprintf(STDERR_FILENO, "Error: Can't write to %s\n", str[2]), exit(99);
+		}
 	}
 
 	if (read_f == -1)
