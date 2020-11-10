@@ -9,7 +9,7 @@
 
 int main(int args, char **str)
 {
-	int from, to, close_first, close_second, count_read;
+	int from, to, close_first, close_second, read_f;
 	char membuf[1024];
 
 	if (args != 3)
@@ -17,18 +17,18 @@ int main(int args, char **str)
 
 	from = open(str[1], O_RDONLY);
 	if (from == -1)
-		dprintf(STDERR_FILENO, "Error: Can't write to %s\n", str[2]), exit(99);
+		dprintf(STDERR_FILENO, "Error: Can't write to %s\n", str[1]), exit(98);
 
 	to = open(str[2], O_TRUNC | O_CREAT | O_WRONLY, 0664);
 	if (to == -1)
 		dprintf(STDERR_FILENO, "Error: Can't write to %s\n", str[2]), exit(99);
 
-	while ((count_read = read(from, membuf, 1024)) > 0)
+	while ((read_f = read(from, membuf, 1024)) > 0)
 	{
-		if (write(to, membuf, count_read) == -1)
+		if (write(to, membuf, read_f) == -1)
 			dprintf(STDERR_FILENO, "Error: Can't write to %s\n", str[2]), exit(99);
 	}
-	if (count_read == -1)
+	if (read_f == -1)
 		dprintf(STDERR_FILENO, "Error: Can't read from file %s\n", str[2]), exit(98);
 
 	close_first = close(from);
