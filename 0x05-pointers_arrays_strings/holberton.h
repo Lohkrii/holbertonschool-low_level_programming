@@ -25,4 +25,7 @@ void rev_string(char *s);
 /* Prints every other character in a string */
 void puts2(char *str);
 
+/* Prints half of a string) */
+void puts_half(char *str);
+
 #endif /* HOLBERTON */
