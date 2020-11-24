@@ -8,24 +8,22 @@
 
 int _atoi(char *s)
 {
-	int sidx = 0, idx = 0;
-	int chng;
-	int signal = 1, strtd = 0;
+	int sidx = 0, signal = 1;
+	int idx = 0, flag = 0;
+	int change;
 
-	while (s[idx] != '\0')
+	for (; s[idx] != '\0'; idx++)
 	{
-		chng = s[idx];
-		if (strtd && (chng < '0' || chng > '9'))
+		change = s[idx];
+		if (flag && (change < '0' || change > '9'))
 			break;
-		if (chng == '-')
-			sign *= -1;
-		if (chng >= '0' && chng <= '9')
+		if (change == '-')
+			signal *= -1;
+		if (change >= '0' && change <= '9')
 		{
-			strtd = 1;
-			sidx = sidx * 10 + (chng - 48) * signal;
+			flag = 1;
+			sidx = sidx * 10 + (change - 48) * signal;
 		}
-		idx++;
 	}
-
-	return (n);
+	return (sidx);
 }
