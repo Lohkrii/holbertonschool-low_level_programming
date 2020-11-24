@@ -5,6 +5,7 @@
  * @dest: Is the destination we are going to copy to.
  * @src: Source of what we are copying.
  * @n: Number of bytes in src.
+ * Return: Returns the destination of the concatonated string.
  */
 char *_strncat(char *dest, char *src, int n)
 {
