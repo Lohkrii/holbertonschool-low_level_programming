@@ -10,12 +10,10 @@ void puts_half(char *str)
 	int idx, hidx;
 
 	for (idx = 0; str[idx] != '\0'; idx++)
-	{
 		;
-	}
 	if (idx % 2 == 0)
 	{
-		hidx= idx / 2;
+		hidx = idx / 2;
 	}
 	else
 	{
