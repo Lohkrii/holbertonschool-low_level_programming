@@ -1,6 +1,8 @@
 #ifndef HOLBERTON_H
 #define HOLBERTON_H
 
+#include <stdio.h>
+
 /* Concatonates 2 strings */
 char *_strcat(char *dest, char *src);
 
