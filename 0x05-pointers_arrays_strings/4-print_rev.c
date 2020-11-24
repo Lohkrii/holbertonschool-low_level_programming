@@ -7,15 +7,14 @@
 
 void print_rev(char *s)
 {
-	int idx;
+	int idx, ridx;
 
 	for (idx = 0; *(s + idx) != '\0'; idx++)
 		;
 	
-	while (idx >= 0)
+	for (ridx = (idx - 1); ridx >= 0; ridx--)
 	{
-		idx--;
-		_putchar(*(s + idx));
+		_putchar(*(s + ridx));
 	}
 	_putchar('\n');
 }
