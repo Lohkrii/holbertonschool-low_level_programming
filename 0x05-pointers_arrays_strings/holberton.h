@@ -1,6 +1,8 @@
 #ifndef HOLBERTON_H
 #define HOLBERTON_H
 
+#include <stdio.h>
+
 /* Prints char to screen. */
 int _putchar(char c);
 
@@ -27,5 +29,8 @@ void puts2(char *str);
 
 /* Prints half of a string) */
 void puts_half(char *str);
+
+/* Prints n number of elements of a string */
+void print_array(int *a, int n);
 
 #endif /* HOLBERTON */
