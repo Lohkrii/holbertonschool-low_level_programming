@@ -22,4 +22,7 @@ void print_rev(char *s);
 /* Reverses a string */
 void rev_string(char *s);
 
+/* Prints every other character in a string */
+void puts2(char *str);
+
 #endif /* HOLBERTON */
