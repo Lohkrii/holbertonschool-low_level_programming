@@ -1,3 +1,6 @@
+#ifndef HOLBERTON_H
+#define HOLBERTON_H
+
 /* Prints char to screen. */
 int _putchar(char c);
 
@@ -12,3 +15,8 @@ int _strlen(char *s);
 
 /* Prints the string in question. */
 void _puts(char *str);
+
+/* Prints a string in reverse */
+void print_rev(char *s);
+
+#endif /* HOLBERTON */
