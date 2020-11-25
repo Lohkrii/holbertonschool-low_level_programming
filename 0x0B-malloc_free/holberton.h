@@ -1,6 +1,9 @@
 #ifndef holberton
 #define holberton
 
+#include <stdio.h>
+#include <stdlib.h>
+
 /* Creates an array that initializes with specific char.*/
 char *create_array(unsigned int size, char c);
 
