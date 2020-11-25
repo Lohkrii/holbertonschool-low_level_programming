@@ -11,4 +11,6 @@ void print_strings(const char *separator, const unsigned int n, ...);
 
 /** Inputs a singular character **/
 int _putchar(char x);
+
+void print_all(const char * const format, ...);
 #endif /** variadic_functions **/
