@@ -22,7 +22,7 @@ void *_calloc(unsigned int nmemb, unsigned int size)
 	if (str == NULL)
 		return (NULL);
 
-	for (grid = str, idx = 0; idx < (nmemb * size);idx++)
+	for (grid = str, idx = 0; idx < (nmemb * size); idx++)
 	{
 		str[idx] = 0;
 	}
