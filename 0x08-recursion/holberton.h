@@ -30,4 +30,6 @@ int is_prime_number(int n);
 /* Returns 1 if string is a palindrome and 0 if false */
 int is_palindrome(char *s);
 
+/* Compares 2 strings */
+int wildcmp(char *s1, char *s2);
 #endif /* HOLBERTON_H */
