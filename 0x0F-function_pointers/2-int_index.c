@@ -6,6 +6,7 @@
  * @array: Is the array to be searched.
  * @size: Is the size of the array.
  * @cmp: Compares values.
+ * Return: Returns -1 for error or the idx.
 */
 
 int int_index(int *array, int size, int (*cmp)(int))
