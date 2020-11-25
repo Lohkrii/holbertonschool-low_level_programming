@@ -44,9 +44,11 @@ char **strtow(char *str)
 	m[wc] = NULL;
 	for (idx = 0; str[idx] != '\0'; word_len = 0)
 	{
-		while (str[idx] != '\0' && (str[idx] == ' ' || str[idx] == '\t' || str[idx] == '\n'))
+		while (str[idx] != '\0' &&
+				(str[idx] == ' ' || str[idx] == '\t' || str[idx] == '\n'))
 			idx++;
-		while (str[idx] != '\0' && str[idx] != ' ' && str[idx] != '\t' && str[idx] != '\n')
+		while (str[idx] != '\0' &&
+				str[idx] != ' ' && str[idx] != '\t' && str[idx] != '\n')
 		{
 			word_len++, idx++;
 		}
