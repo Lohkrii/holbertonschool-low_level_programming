@@ -9,4 +9,7 @@ int _putchar(char c);
 
 unsigned int str_len(char *n);
 
+void *_calloc(unsigned int nmemb, unsigned int size);
+
+int *array_range(int min, int max);
 #endif /*holberton*/
