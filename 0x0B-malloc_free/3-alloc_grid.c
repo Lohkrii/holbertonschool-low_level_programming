@@ -1,12 +1,10 @@
 #include "holberton.h"
 #include <stdlib.h>
 /**
- * alloc_grid - returns a pointer to a 2 dimensional array of integers
- * @width: size of the integer value array
- * @height: size of the pointer array
- *
- * Return: address to the first pointer in the array of pointers
- * which points to the first value of the 2 dimensional array
+ * alloc_grid - Returns a pointer to a 2 dimensional grid of ints.
+ * @width: Width variable of the grid.
+ * @height: Height variable of the grid.
+ * Return: Returns address of grid.
  */
 int **alloc_grid(int width, int height)
 {
