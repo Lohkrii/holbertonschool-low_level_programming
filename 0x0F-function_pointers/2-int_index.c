@@ -4,28 +4,24 @@
 /**
  * int_index - Searches for an integer.
  * @array: Is the array to be searched.
- * @size: is the size of the array.
+ * @size: Is the size of the array.
  * @cmp: Compares values.
 */
 
 int int_index(int *array, int size, int (*cmp)(int))
 {
-	int idx;
+	int idx, check;
 
-	if(size <= 0)
-	{
+	if (array == NULL || cmp == NULL)
 		return (-1);
-	}
+	if (size <= 0)
+		return (-1);
 	for (idx = 0; idx < size; idx++)
 	{
-		if(cmp(array[idx]) != 0)
-		{
+		check = cmp(array[idx]);
+		if (check)
 			return (idx);
-		}
 	}
-	if(idx == size)
-	{
-		return (-1);
-	}
+
 	return (-1);
 }
