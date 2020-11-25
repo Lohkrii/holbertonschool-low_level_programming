@@ -27,7 +27,7 @@ int get_change(int amount)
 }
 
 /**
- * main - Prints the amount of coins you get in 
+ * main - Prints the amount of coins you get in.
  * exchange based on the given value.
  * @argc: Argument count.
  * @argv: Argument array.
