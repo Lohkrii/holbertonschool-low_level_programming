@@ -13,15 +13,25 @@ int main(void)
 	for (idx = 1; idx <= 100; idx++)
 	{
 		if (idx % 3 == 0 && idx % 5 == 0)
+		{
 			printf("FizzBuzz");
+		}
 		else if (idx % 3 == 0)
+		{
 			printf("Fizz");
+		}
 		else if (idx % 5 == 0)
+		{
 			printf("Buzz");
+		}
 		else
+		{
 			printf("%d", idx);
+		}
 		if (idx < 100)
+		{
 			printf(" ");
+		}
 	}
 	printf("\n");
 	return (0);
