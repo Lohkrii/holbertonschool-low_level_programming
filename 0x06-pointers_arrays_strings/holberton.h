@@ -33,5 +33,7 @@ char *rot13(char *c);
 /* Prints an int */
 void print_number(int n);
 
+/* Prints a single character */
+int _putchar(char c);
 
 #endif /* HOLBERTON_H */
