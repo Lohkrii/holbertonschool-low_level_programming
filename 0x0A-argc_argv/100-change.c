@@ -11,16 +11,19 @@ int get_change(int amount)
 	unsigned int change, count_type;
 	int types[] = {25, 10, 5, 2, 1};
 
-	for (count_type = 0, change = 0; amount > 0;)
+	count_type = 0;
+	change = 0;
+
+	while (amount > 0)
 	{
 		if (amount >= types[count_type])
 		{
 			amount -= types[count_type];
-			change++;
+			++change;
 		}
 		else if (amount < types[count_type])
 		{
-			change++;
+			++count_type;
 		}
 	}
 	return (change);
@@ -36,8 +39,9 @@ int get_change(int amount)
 
 int main(int argc, char *argv[])
 {
-	unsigned int change = 0, amount;
+	unsigned int change, amount;
 
+	change = 0;
 	if (argc == 1 || argc > 2)
 	{
 		printf("Error\n");
@@ -48,8 +52,10 @@ int main(int argc, char *argv[])
 		printf("%d\n", change);
 		return (0);
 	}
+
 	amount = atoi(argv[1]);
 	change = get_change(amount);
+
 	printf("%d\n", change);
 	return (0);
 }
