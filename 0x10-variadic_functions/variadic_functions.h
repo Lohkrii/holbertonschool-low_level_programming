@@ -1,5 +1,10 @@
 #ifndef variadic_functions
 #define variadic_functions
+
+#include <stdio.h>
+#include <stdlib.h>
+#include <stdarg.h>
+
 /** Sums the passed arguments. **/
 int sum_them_all(const unsigned int n, ...);
 
