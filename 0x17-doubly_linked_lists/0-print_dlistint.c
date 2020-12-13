@@ -10,7 +10,7 @@ size_t print_dlistint(const dlistint_t *h)
 {
 	size_t idx;
 
-	for(idx = 0; h != NULL; idx++)
+	for (idx = 0; h != NULL; idx++)
 	{
 		printf("%i\n", h->n);
 		h = h->next;
