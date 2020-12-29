@@ -9,14 +9,14 @@
 
 int main(int argc, char *argv[])
 {
-	int idx;
+	int opcode;
 
 	if (argc != 2)
 	{
 		printf("Error\n"), exit(1);
 	}
-	idx = atoi(argv[1]);
-	if (idx < 0)
+	opcode = atoi(argv[1]);
+	if (opcode < 0)
 	{
 		printf("Error\n"), exit(2);
 	}
