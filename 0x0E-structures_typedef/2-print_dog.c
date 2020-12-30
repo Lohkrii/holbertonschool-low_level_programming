@@ -1,5 +1,10 @@
 #include "dog.h"
 
+/**
+ * print_dog - Prints the details of the dog struct in question.
+ * @d: Is the dog pointer.
+ */
+
 void print_dog(struct dog *d)
 {
 	if (d != NULL)
