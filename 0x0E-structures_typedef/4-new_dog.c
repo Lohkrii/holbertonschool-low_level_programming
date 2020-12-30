@@ -54,7 +54,7 @@ int _strlen(char *str)
 
 	for (idx = 0; str[idx] != '\0'; idx++)
 		;
-	return (idx);
+	return (idx + 1);
 }
 
 /**
@@ -68,7 +68,7 @@ char *_strcpy(char *src)
 	int idx, len;
 	char *dest;
 
-	len = _strlen(src) + 1;
+	len = _strlen(src);
 
 	dest = malloc(sizeof(char) * len);
 	if (dest == NULL)
