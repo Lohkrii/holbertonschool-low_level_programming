@@ -5,10 +5,10 @@
 #include <stdio.h>
 
 /**
-* struct dog - New data type for a dog
-* @name: First element
-* @age: Second element
-* @owner: Third element
+* struct dog - New data type struct of a dog.
+* @name: Name variable of dog.
+* @age: Age variable of dog.
+* @owner: Owner variable of dog.
 */
 
 typedef struct dog
@@ -24,13 +24,10 @@ void init_dog(struct dog *d, char *name, float age, char *owner);
 /* Prints dog */
 void print_dog(struct dog *d);
 
-/* Another struct for dog */
-typedef struct dog dog_t;
-
 /* Creats new dog */
 dog_t *new_dog(char *name, float age, char *owner);
 
 /* Frees dog memory*/
-void free_dog(dog_t*d);
+void free_dog(dog_t *d);
 
 #endif /* DOG_H_ */
