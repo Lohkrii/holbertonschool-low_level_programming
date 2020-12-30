@@ -1,5 +1,9 @@
 #include "dog.h"
 #include <stdlib.h>
+
+int _strlen(char *s);
+char *_strcpy(char *s);
+
 /**
 * new_dog - Creates a new dog from a dog_t struct
 * @name: Pointer to memory location where the dog name string is stored
@@ -16,7 +20,7 @@ dog_t *new_dog(char *name, float age, char *owner)
 	char *dname;
 
 	dog_ptr = malloc(sizeof(dog_t));
-	if (ptr == NULL)
+	if (dog_ptr == NULL)
 		return (NULL);
 
 	dname = _strcpy(name);
@@ -32,9 +36,9 @@ dog_t *new_dog(char *name, float age, char *owner)
 		free(dog_ptr);
 		return (NULL);
 	}
-	ptr->age = age;
-	ptr->name = dname;
-	ptr->owner = owner;
+	dog_ptr->age = age;
+	dog_ptr->name = dname;
+	dog_ptr->owner = owner;
 	return (dog_ptr);
 }
 
@@ -44,7 +48,7 @@ dog_t *new_dog(char *name, float age, char *owner)
 * Return: The length of a string.
 */
 
-int _strlen(char *s)
+int _strlen(char *str)
 {
 	int idx;
 
@@ -70,7 +74,7 @@ char *_strcpy(char *src)
 	if (dest == NULL)
 		return (NULL);
 
-	for (idx = 0; idx < len; i++)
+	for (idx = 0; idx < len; idx++)
 	{
 		dest[idx] = src[idx];
 	}
