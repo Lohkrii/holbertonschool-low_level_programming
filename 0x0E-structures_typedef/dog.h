@@ -33,4 +33,7 @@ dog_t *new_dog(char *name, float age, char *owner);
 /* Frees dog memory*/
 void free_dog(dog_t *d);
 
+int _strlen(char *s);
+char *_strcpy(char *s);
+
 #endif /* DOG_H_ */
