@@ -44,7 +44,7 @@ dog_t *new_dog(char *name, float age, char *owner)
 
 /**
 * _strlen - Returns the length of a string.
-* @s: Pointer to a string at address.
+* @str: Pointer to a string at address.
 * Return: The length of a string.
 */
 
