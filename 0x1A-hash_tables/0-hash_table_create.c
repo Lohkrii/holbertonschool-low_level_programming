@@ -20,8 +20,10 @@ hash_table_t *hash_table_create(unsigned long int size)
 	/* Memory allocation of array pointers */
 	new_table->array = malloc(size * 8);
 	if (new_table->array == NULL)
+	{
 		free(new_table);
 		return (NULL);
+	}
 
 	for (idx = 0; idx < (new_table->size); idx++)
 	{
