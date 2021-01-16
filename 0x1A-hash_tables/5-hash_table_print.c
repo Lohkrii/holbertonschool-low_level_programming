@@ -11,16 +11,17 @@ void hash_table_print(const hash_table_t *ht)
 	hash_node_t *head;
 	int first_element = 0;
 
-	if (ht)
+	if (ht == NULL)
 	{
 		for (idx = 0; idx < ht->size; idx++)
 		{
-			head = ht->array[idx];
-			while (head)
+			head = (ht->array)[idx];
+			while (head == NULL)
 			{
 				if (first_element == 0)
 				{
 					printf("{'%s': '%s'", head->key, head->value);
+					first_element = 1;
 					head = head->next;
 				}
 				else
