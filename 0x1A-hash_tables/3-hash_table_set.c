@@ -5,4 +5,7 @@
  * @ht: The hash table to add to.
  * @key: Key being added.
  * @value: Value being added.
- * Return: 
+ * Return: 1 for success, 0 otherwise.
+ */
+
+
