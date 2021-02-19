@@ -1,7 +1,5 @@
 # Learning Objectives
 
-### At the end of this project, you are expected to be able to explain to anyone, without the help of Google:
-
 ## General
 
 *    What are make, Makefiles
@@ -12,7 +10,7 @@
 *    What are variables and how to set and use them
 
 ## Requirements
-## General
+### General
 
 *    Allowed editors: vi, vim, emacs
 *    OS: Ubuntu 14.04 LTS
@@ -22,6 +20,6 @@
 *    A README.md file, at the root of the folder of the project, is mandatory
 
 ## More Info
-## Files
+### Files
 
 In the following tasks, I'm are going to use [these files](https://github.com/holbertonschool/0x1B.c). We want to compile these only.
