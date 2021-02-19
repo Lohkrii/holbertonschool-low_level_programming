@@ -1,2 +1,6 @@
+CC = gcc
+
+SRCS = $(main.c, holberton.c)
+
 all:
-	${CC} main.c holberton.c -o holberton
+	${CC} $< -o holberton
