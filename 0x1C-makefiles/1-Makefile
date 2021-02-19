@@ -1,6 +1,6 @@
-CC = gcc
+CC := gcc
 
-SRCS = $(main.c, holberton.c)
+SRCS = main.c, holberton.c
 
-all:
-	${CC} $< -o holberton
+all: holberton.o
+	${CC} -o holberton
