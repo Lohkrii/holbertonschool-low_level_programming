@@ -22,4 +22,4 @@
 ## More Info
 ### Files
 
-In the following tasks, I'm are going to use [these files](https://github.com/holbertonschool/0x1B.c). We want to compile these only.
+In the following tasks, I'm are going to use [these files](https://github.com/holbertonschool/0x1B.c). I'm going to compile these only.
