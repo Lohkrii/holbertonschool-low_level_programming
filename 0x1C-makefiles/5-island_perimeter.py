@@ -4,7 +4,7 @@
 """
 
 
- def island_perimeter(grid):
+def island_perimeter(grid):
     """ Calculates the perimeter of 1's in a grid """
     count = 0
     for idx in range(len(grid)):
